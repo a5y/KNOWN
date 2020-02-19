@@ -1,0 +1,650 @@
+:root{
+    --mainColor:rgb(45,223,128);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 15 px;
+}
+/*Global*/
+
+
+/*img{
+    width: 100%;
+}*/
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.clearFix{
+    clear: both;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.container1{
+    width: 65%;
+    margin: 0 auto;
+    padding-top:80px; 
+}
+.container2{
+    width: 65%;
+    margin: 0 auto;
+    padding-top:80px;     
+    padding-bottom: 65px;
+}
+
+/*Style*/
+
+
+header{
+    background-image: url('../IMG/djikfwe5jrle.jpeg');
+    background-size: cover;
+}
+header nav{
+    background-color: aliceblue;
+    border-top: 3px solid var(--mainColor);
+
+}
+header nav ul.navigation li{
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+header nav ul.navigation{
+    overflow: hidden;
+}
+header nav ul.navigation:hover{
+    overflow: visible;
+}
+li.has-dropdown{
+    position: relative;
+}
+li.has-dropdown ul.dropdown li{
+    display: block !important;
+    padding: 10px;
+}
+li.has-dropdown ul.dropdown{
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid var(--mainColor);
+    width: 180px;
+    top: 200%;
+    transition: 0.5s;
+    opacity: 0;
+}
+li.has-dropdown:hover ul.dropdown{
+    opacity: 1;
+    top: 100%;
+    overflow: visible;
+}
+header nav ul.navigation li a{
+   padding: 15px;
+   transition: 0.5s;
+}
+header nav ul.navigation li.active a{
+    background-color: var(--mainColor);
+    color: #fff;
+}
+header nav ul.navigation li:hover a{
+    background-color: var(--mainColor);
+    color: #fff;
+}
+.logo{
+    float: left;
+    width: 20%;
+      
+}
+.logo a{
+    font-size: 1.5rem; 
+    padding: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--mainColor);
+}
+.navigation{
+    float: left;
+    width: 60%;
+    list-style: none;
+}
+.contact{
+    float: left;
+    width: 20%;
+    padding: 15px 0;
+}
+header .content{
+    padding: 200px 0;
+}
+header .content h2{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+header .content p{
+    width: 50%;
+    word-spacing: 10%;
+    color: #eee;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+header .content a{
+    padding: 10px 25px;
+    color: #eee;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card{
+    float: left;
+    border: 1px solid rgb(212, 206, 206);    
+    width: 31%;
+    margin: 0 10px;
+    height: 280px;
+    padding: 10px;
+    padding-top: 35px; 
+    border-radius: 5px;
+}
+.card span{
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid rgb(194, 185, 185);   
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    line-height: 65px; 
+    background-color: rgb(68, 43, 124);
+    color: #eee;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card h3{
+   padding: 15px;
+   color: rgb(75, 73, 73);
+}
+.card p{
+    padding: 5px 15px;
+    line-height: 20px;
+    color: darkgrey;
+    word-spacing: 5px
+}
+
+
+
+
+.left-content{
+    float: left;
+    width: 60%;
+}
+
+.right-content{
+    float: left;
+    width: 40%;
+   padding-left: 80px;
+}
+.left-content h2{
+    line-height: 30px;
+    padding-bottom: 35px;
+}
+.left-content .links{
+    padding-left:30px;   
+}
+.links .link{
+    padding-bottom: 20px;
+    line-height: 30px;
+    word-spacing: 5px;
+}
+.link span{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+}
+.link p{
+    
+    color: darkgrey;
+    display: inline;
+    padding-left: 60px;
+    font-size: 15px;
+}
+.right-content .rcont{
+    padding-top: 40px;
+    width: 330px;
+    height: 330px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    line-height: 47px;
+    background-color: #000;
+    color: #fff;
+}
+.rcont input{
+    background-color: #000;
+    border: none;
+    border-bottom: 1px solid  darkgrey;
+}
+.rcont .submit{
+    border: 1px solid #eee;
+    border-radius: 20px;
+    background-color: #eee;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+.fa-user-friends , .fa-certificate , .fa-chart-bar{
+    color: #eee;
+}
+.left-content .logo1{
+    display: inline-block;
+    border: 1px solid var(--mainColor);
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: var(--mainColor);
+    text-align: center;
+    
+}
+.left-content .para{
+    display: inline;
+    line-height: 10px;
+}
+
+
+.container .trcont{
+    background-color: rgb(247, 247, 247);
+}
+.container .teachers{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.teachers span{
+    color: rgb(97, 95, 95);
+}
+.container .tr{
+    padding: 10px 220px;
+}
+.container .trainer{
+    float: left;
+    width: 25%;
+    background-color: rgb(247, 247, 247);
+    padding: 0 10px;
+    display: inline-block;
+
+}
+.trainer .cont{
+    background-color: #fff;
+    padding: 10px;
+    line-height: 20px;
+    color: rgb(80, 80, 80);
+}
+.cont span{
+    font-size: 12px;
+    padding-bottom: 15px;
+    padding-left: 10px
+}
+.cont h4{
+    padding-left: 10px
+}
+
+.cont .fab , .cont .far{
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+
+
+
+.container .cent1{
+   padding: 100px 0;
+   position: relative;
+}
+.cent1 .arrow{
+    position: absolute;
+    bottom: 70px;
+    left: 570px;
+    color: rgb(97, 95, 95);
+}
+.container .cent{
+    text-align: center;
+}
+.container .card1{
+    float: left;
+    width: calc(30% - 40px);
+    margin: 20px;
+    background-color:rgb(247, 247, 247);
+}
+.container .card2{
+    padding-left:  130px;
+}
+.card1 .ima1{
+    background-image: url('../IMG/kids.jpg');
+    background-size: cover;
+}
+.card1 .ima2{
+    background-image: url('../IMG/business.jpg');
+    background-size: cover;
+}.card1 .ima3{
+    background-image: url('../IMG/social.jpg');
+    background-size: cover;
+}
+.card1 .words{
+    padding: 100px 0;
+    position: relative;
+}
+.cent span{
+    color: rgb(97, 95, 95);
+}
+.words .wor{
+   position: absolute;
+   color: #fff;
+    bottom: 10px;
+   left: 20px;
+   font-size: 14px;
+}
+.card1 .par{
+    padding: 20px;
+    line-height: 20px;
+
+}
+.par p{
+    font-size: 12px;
+    color: rgb(97, 95, 95);
+}
+.par .acc{
+    padding-top: 10px;
+    position: relative;
+}
+.acc .im1 , .acc .im3{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('../IMG/man4.jpg');
+    background-size: cover;
+}
+.acc .im2{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('../IMG/girl5 (2).jpg');
+    background-size: cover;
+}
+.acc h5{
+    display: inline-block;
+    position: absolute;
+    bottom: 19px;
+    left: 60px;
+
+}
+.acc a{
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    left: 170px;
+    border: 1px solid var(--mainColor);
+    color: #eee;
+    background-color: var(--mainColor);
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+}
+#atag{
+    border: 1px solid rgb(68, 43, 124);
+    background-color: rgb(68, 43, 124);
+}
+
+
+
+.container .body1{
+    background-color: rgb(248, 248, 248);
+    padding: 50px;
+    padding-bottom: 80px;
+}
+.container .cent2{
+    text-align: center;
+}
+.cent2 span{
+    color: rgb(97, 95, 95);
+    font-size: 12px;
+}
+.container .coont{
+    padding-top: 30px;
+    padding-left:130px; 
+    position: relative;
+}
+.container .stu{
+    float: left;
+    width: calc(30% - 40px);
+    margin: 20px;
+    background-color: #fff;
+    position: relative;
+}
+.stu .imag1{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../IMG/man4.jpg');
+    background-size: cover;
+}
+.stu .imag2{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../IMG/man5.jpg');
+    background-size: cover;
+}
+.stu .imag3{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../IMG/girl4 (2).jpg');
+    background-size: cover;
+}
+.stu .imcon{
+    padding: 20px;
+    position: relative;
+}
+.imcon h4{
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 70px;
+}
+.imcon span{
+    display: inline-block;
+    font-size: 11px;
+    color: rgb(97, 95, 95);
+    position: absolute;
+    top: 45px;
+    left: 70px;
+}
+.stu p{
+    padding-left: 30px;
+    font-size: 12px;
+    color: rgb(97, 95, 95);
+    line-height: 20px;
+    word-spacing: 5px;
+}
+.stu .stars{
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.stu .fa-star{
+   font-size: 12px;
+   color: rgb(68, 43, 124);
+}
+.coont .cir{
+    position: absolute;
+    bottom: -25px;
+    left: 500px;
+    padding-top: 70px;
+   font-size: 10px;
+    
+}
+.cir .fa-circle{
+    padding-left: 5px;
+    color: rgb(97, 95, 95);
+}
+
+
+
+
+.container .body2{
+    padding: 50px;
+    background-color:  rgb(68, 43, 124);
+}
+.body2 .lecont{
+    float: left;
+    width: calc(35%-40px);
+    margin: 10px;
+    padding-left: 100px;
+    padding-top: 65px;
+}
+.body2 .ricont{
+    float: left;
+    width: calc(35%-40px);
+    margin: 20px;
+    padding-top: 80px;
+}
+.lecont .topp{
+    padding: 20px 0;
+    color: #eee;
+    line-height: 20px;
+}
+.topp span{
+    font-size: 13px;
+}
+.lecont .botom{
+    padding: 15px 0;
+    color: #eee;
+}
+.botom input{
+    display: block;
+    border-radius: 5px;
+    width: 380px;
+    height: 35px;
+}
+.botom textarea{ 
+    display: block;
+    border-radius: 5px;
+}
+.botom a{ 
+    display: inline-block;
+    height: 35px;
+    width: 145px;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    background-color: #eee;
+    text-align: center;
+    padding-top: 5px;
+    color: #000;
+}
+
+
+
+
+.container .body3{
+    padding: 50px;
+    background-color:  rgb(20, 17, 27);
+    padding-left: 130px;
+}
+.body3 .lc{
+    float: left;
+    width: calc(30%-40px);
+    padding: 20px;
+}
+.body3 .cc{
+    float: left;
+    width: calc(30%-40px);
+    padding: 20px;
+}
+.body3 .rc{
+    float: left;
+    width: calc(30%-40px);
+    padding: 20px;
+}
+.lc h3{
+    color: #fff;
+    padding-left: 10px;
+}
+.lc span{
+    color: rgb(97, 95, 95);
+    font-size: 13px;
+    line-height: 15px;
+    word-spacing: 3px;
+    padding: 10px;
+    display: block;
+}
+.lc .fab{
+    color: var(--mainColor);
+    font-size: 12px;
+    padding: 10px;
+}
+.cc h3{
+    color: #fff;
+    padding-left: 10px;
+}
+.cc span{
+    color: rgb(97, 95, 95);
+    font-size: 13px;
+    line-height: 15px;
+    word-spacing: 5px;
+    padding: 10px;
+    display: block;
+    padding-bottom: 30px;
+}
+.cc a{
+    color: rgb(97, 95, 95);
+    font-size: 13px;
+    line-height: 15px;
+    word-spacing: 5px;
+    padding: 10px;
+}
+.rc h3{
+    color: #fff;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+.rc form{
+    padding: 10px;
+}
+.rc input{
+    border: none;
+    border-bottom: 1px solid  rgb(97, 95, 95);
+    background-color: rgb(20, 17, 27);
+    padding: 10px;
+}
+.rc a{
+    padding: 10px;
+    border: 1px solid #eee;
+    color: #eee;
+    border-radius: 20px;
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    font-size: 13px;
+}
+.rc span{
+    color: rgb(97, 95, 95);
+    font-size: 13px;
+    line-height: 15px;
+    word-spacing: 5px;
+    padding: 10px;
+    padding-bottom: 30px;
+}
